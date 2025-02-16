@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-gemunu-libre: "Gemunu Libre", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+  }
+  body::-webkit-scrollbar {
+    width: 0.65rem;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-[#24C1F2];
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-white rounded-[0.5rem];
+  }
+}
+
+@layer utilities {
+  .slide {
+    transition: filter 0.3s ease-in-out;
+  }
+}
+
+html {
+  font-family: var(--font-gemunu-libre);
+}
