@@ -4,12 +4,8 @@ import { Typography } from "dicria-ui";
 import React, { useState, useRef, useEffect } from "react";
 import { Container } from "../Container/Container";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-
-interface Image {
-  id: number;
-  src: string;
-  alt: string;
-}
+import { GalleryImage } from "./interfaces";
+import Image from "next/image";
 
 const GallerySection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,10 +15,15 @@ const GallerySection = () => {
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const images: Image[] = [
+  const images: GalleryImage[] = [
     { id: 1, src: "/hero-image.png", alt: "Gallery image 1" },
-    { id: 2, src: "/hero-image.png", alt: "Gallery image 2" },
-    { id: 3, src: "/hero-image.png", alt: "Gallery image 3" },
+    { id: 2, src: "/dyepaintball.jpg", alt: "Gallery image 2" },
+    { id: 3, src: "/paintball.jpg", alt: "Gallery image 3" },
+    { id: 4, src: "/paintball-2.jpg", alt: "Gallery image 4" },
+    { id: 4, src: "/paintball-3.jpg", alt: "Gallery image 5" },
+    { id: 4, src: "/paintball-4.jpg", alt: "Gallery image 6" },
+    { id: 4, src: "/paintball-5.jpg", alt: "Gallery image 7" },
+    { id: 4, src: "/paintball-6.jpg", alt: "Gallery image 7" },
   ];
 
   const handlePrevImage = () => {
@@ -80,7 +81,10 @@ const GallerySection = () => {
   }, [isDragging, dragDistance]);
 
   return (
-    <section id="gallery" className="bg-black text-white mb-8 w-full">
+    <section
+      id="gallery"
+      className="bg-black text-white mb-8 w-full scroll-mt-20"
+    >
       <Container>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
@@ -107,10 +111,13 @@ const GallerySection = () => {
                 }}
               >
                 <div className="border-2 border-cyan-400">
-                  <img
+                  <Image
                     src={images[0].src}
                     alt={images[0].alt}
-                    className="w-full h-auto"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
               </div>
@@ -124,10 +131,13 @@ const GallerySection = () => {
                 }}
               >
                 <div className="border-2 border-cyan-400">
-                  <img
+                  <Image
                     src={images[1].src}
                     alt={images[1].alt}
-                    className="w-full h-auto"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
               </div>
@@ -141,10 +151,13 @@ const GallerySection = () => {
                 }}
               >
                 <div className="border-2 border-cyan-400">
-                  <img
+                  <Image
                     src={images[2].src}
                     alt={images[2].alt}
-                    className="w-full h-auto"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
               </div>
@@ -165,7 +178,6 @@ const GallerySection = () => {
             onTouchMove={handleDragMove}
             onTouchEnd={handleDragEnd}
           >
-            {/* Close button */}
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 text-[#24C1F2] hover:text-gray-300 transition-colors"
@@ -173,7 +185,6 @@ const GallerySection = () => {
               <X size={32} />
             </button>
 
-            {/* Previous button */}
             <button
               onClick={handlePrevImage}
               className="absolute left-4 text-[#24C1F2] hover:text-gray-300 transition-colors z-50"
@@ -181,7 +192,6 @@ const GallerySection = () => {
               <ChevronLeft size={48} />
             </button>
 
-            {/* Image */}
             <div
               className="max-w-4xl max-h-[80vh] w-full h-full flex items-center justify-center"
               style={{
@@ -189,15 +199,21 @@ const GallerySection = () => {
                 transition: isDragging ? "none" : "transform 0.3s ease-out",
               }}
             >
-              <img
+              <Image
                 src={images[currentImageIndex].src}
                 alt={images[currentImageIndex].alt}
-                className="max-w-full max-h-full object-contain select-none"
+                className="object-contain select-none"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
                 draggable="false"
+                width={0}
+                height={0}
+                sizes="100vw"
               />
             </div>
 
-            {/* Next button */}
             <button
               onClick={handleNextImage}
               className="absolute right-4 text-[#24C1F2] hover:text-gray-300 transition-colors z-50"

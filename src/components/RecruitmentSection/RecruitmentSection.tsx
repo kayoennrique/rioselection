@@ -30,7 +30,7 @@ const RecruitmentSection = () => {
           <div className="absolute left-0 bottom-0 w-1/2 h-4/5">
             <div className="relative w-full h-full">
               <Image
-                src="/img.png"
+                src="/playerpaintball.png"
                 alt="Paintball player"
                 className="object-contain h-full"
                 width={736}
