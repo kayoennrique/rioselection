@@ -11,7 +11,7 @@ const HeroSection: FC = () => {
         <Image
           src="/hero-image.png"
           alt="Hero background"
-          className="w-full h-full object-cover brightness-50 opacity-80"
+          className="w-full h-full object-cover opacity-40"
           width={1920}
           height={1080}
           loading="lazy"
@@ -22,21 +22,25 @@ const HeroSection: FC = () => {
         <Typography
           as="h1"
           size="80px"
-          className="md:text-6xl font-bold text-white font-gemunu mb-4"
+          className="md:text-6xl font-bold text-white font-gemunu mt-20 mb-4"
         >
-          Ready for battle?
+          The battle starts now!
         </Typography>
         <Typography
           as="p"
-          size="32px"
-          className="text-[12px] md:text-2xl text-white font-roboto mb-8"
+          className="text-[32px] w-auto text-white mt-8 font-roboto mb-8"
         >
-          Join Rio Selection and show your strength!
+          Train hard, push your limits, and feel the adrenaline!
         </Typography>
         <Button
           textbutton="Get in touch"
           className="bg-[#24C1F2] hover:bg-cyan-600 text-white text-[22px] not-italic font-bold w-full lg:w-[288px] h-[57px] py-2 px-8 rounded-lg transition-colors duration-300 font-roboto"
-          onClick={() => console.log("Get in touch clicked")}
+          onClick={() =>
+            window.open(
+              "https://www.instagram.com/rioselectionpaintballteam/",
+              "_blank"
+            )
+          }
         />
       </div>
     </section>

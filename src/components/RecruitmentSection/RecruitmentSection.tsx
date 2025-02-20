@@ -55,7 +55,12 @@ const RecruitmentSection = () => {
             <Button
               textbutton="Get in touch"
               className="bg-[#24C1F2] hover:bg-cyan-600 text-white text-[22px] not-italic font-bold width-[288px] height-[57px] py-2 px-8 rounded-lg transition-colors duration-300 font-roboto"
-              onClick={() => console.log("Get in touch clicked")}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/rioselectionpaintballteam/",
+                  "_blank"
+                )
+              }
             />
           </div>
         </div>

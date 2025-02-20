@@ -9,5 +9,9 @@ module.exports = {
       },
     },
   },
+  animation: {
+    scroll: "scroll 15s linear infinite",
+    float: "float 3s ease-in-out infinite",
+  },
   plugins: [],
 };
