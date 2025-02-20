@@ -33,6 +33,7 @@ const Footer: FC = () => {
               href="https://www.instagram.com/rioselectionpaintballteam/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram Contact Link"
               className="text-cyan-500 hover:text-cyan-400 transition-colors"
             >
               <Instagram size={24} />
@@ -41,6 +42,7 @@ const Footer: FC = () => {
               href="https://www.facebook.com/Rio-Selection-Paintball-Team-101622614649015"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook Contact Link"
               className="text-cyan-500 hover:text-cyan-400 transition-colors"
             >
               <Facebook size={24} />
@@ -56,6 +58,7 @@ const Footer: FC = () => {
               href="https://sparkmind.com.br"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link to the website developer company"
               className="text-[#24C1F2] hover:text-white transition-colors"
             >
               {""} SparkMind

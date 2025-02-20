@@ -19,18 +19,25 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Rio Selection",
+  title: "Rio Selection - Paintball Team",
   description:
-    "Rio Selection - Transformamos ideias em sites modernos e responsivos. Criação de sites, soluções digitais, design e social media para impulsionar o seu negócio online.",
+    "Join Rio Selection, a paintball team driven by strategy, speed, and teamwork. We compete fiercely and train hard to dominate every battle.",
   keywords:
-    "Criação de sites, soluções digitais, design responsivo, social media, desenvolvimento web, marketing digital, sites modernos",
+    "paintball, paintball team, Rio Selection, paintball tournaments, extreme sports, strategy, competition, professional paintball",
   openGraph: {
-    title: "Rio Selection",
+    title: "Rio Selection - Paintball Team",
     description:
-      "Transformamos ideias em sites modernos e responsivos. Impulsione o seu negócio online com soluções digitais inovadoras.",
-    images: "/logo.png",
-    url: "https://www.riocollection.com",
+      "Be part of Rio Selection! A competitive paintball team passionate about teamwork and victory. Join us on the battlefield!",
+    images: "/rio-selection-banner.png",
+    url: "https://www.rioselection.com",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rio Selection - Paintball Team",
+    description:
+      "Discover the strength and strategy of Rio Selection, a paintball team ready for any battle!",
+    images: "/rio-selection-banner.png",
   },
 };
 

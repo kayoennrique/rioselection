@@ -16,28 +16,38 @@ const TeamSection = () => {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: "KAUÃ",
-      imageUrl: "/member.png",
+      name: "MACHADO",
+      imageUrl: "/player-machado.jpg",
     },
     {
       id: 2,
-      name: "MACHADO",
-      imageUrl: "/machado.jpg",
+      name: "BATATA",
+      imageUrl: "/member.png",
     },
     {
       id: 3,
-      name: "JJ",
-      imageUrl: "/jj.jpg",
+      name: "BOLA",
+      imageUrl: "/player-eduardo.jpg",
     },
     {
       id: 4,
-      name: "PATRICK",
-      imageUrl: "/patrick.jpg",
+      name: "LEO",
+      imageUrl: "/machado.jpg",
     },
     {
       id: 5,
-      name: "MARLON",
-      imageUrl: "/marlon.jpg",
+      name: "KLEBER",
+      imageUrl: "/jj.jpg",
+    },
+    {
+      id: 6,
+      name: "BRUNO",
+      imageUrl: "/patrick.jpg",
+    },
+    {
+      id: 7,
+      name: "PATRICK",
+      imageUrl: "/player-patrick.jpg",
     },
   ];
 

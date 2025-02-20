@@ -32,10 +32,10 @@ const AchievementsSection = () => {
               >
                 <motion.div custom={0} variants={fadeIn}>
                   <Typography
-                    as="h2"
+                    as="h1"
                     className="text-[52px] font-bold text-white font-gemunu text-left"
                   >
-                    We are Selection
+                    Passion. Strategy. Victory.
                   </Typography>
                 </motion.div>
                 <motion.div custom={1} variants={fadeIn}>
@@ -43,17 +43,10 @@ const AchievementsSection = () => {
                     as="p"
                     className="text-gray-300 text-lg text-left"
                   >
-                    We are a team passionate about paintball. Our focus is
-                    strategy, speed and teamwork to dominate the field.
-                  </Typography>
-                </motion.div>
-                <motion.div custom={2} variants={fadeIn}>
-                  <Typography
-                    as="p"
-                    className="text-gray-300 text-lg text-left"
-                  >
-                    Podemos acrescentar melhor a história da LYE aqui para ser
-                    mais completa.
+                    <strong>Rio Selection</strong> is a team built on
+                    discipline, skill, and camaraderie. With a relentless drive
+                    to win, we train hard, compete fiercely, and always support
+                    each other—on and off the field.
                   </Typography>
                 </motion.div>
               </motion.div>
@@ -150,15 +143,6 @@ const AchievementsSection = () => {
                 >
                   We are a team passionate about paintball. Our focus is
                   strategy, speed and teamwork to dominate the field.
-                </Typography>
-              </motion.div>
-              <motion.div variants={fadeIn} custom={2}>
-                <Typography
-                  as="p"
-                  className="text-gray-300 text-sm text-center font-roboto"
-                >
-                  Podemos acrescentar melhor a história da LYE aqui para ser
-                  mais completa.
                 </Typography>
               </motion.div>
             </motion.div>
