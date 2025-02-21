@@ -130,10 +130,10 @@ const AchievementsSection = () => {
             >
               <motion.div variants={fadeIn} custom={0}>
                 <Typography
-                  as="h2"
+                  as="h1"
                   className="text-[52px] font-bold text-white font-gemunu text-center"
                 >
-                  We are Selection
+                  Passion. Strategy. Victory.
                 </Typography>
               </motion.div>
               <motion.div variants={fadeIn} custom={1}>
