@@ -17,13 +17,14 @@ const GallerySection = () => {
 
   const images: GalleryImage[] = [
     { id: 1, src: "/hero-image.png", alt: "Gallery image 1" },
-    { id: 2, src: "/dyepaintball.jpg", alt: "Gallery image 2" },
+    { id: 2, src: "/paintball-7.jpg", alt: "Gallery image 7" },
     { id: 3, src: "/paintball.jpg", alt: "Gallery image 3" },
-    { id: 4, src: "/paintball-2.jpg", alt: "Gallery image 4" },
-    { id: 4, src: "/paintball-3.jpg", alt: "Gallery image 5" },
-    { id: 4, src: "/paintball-4.jpg", alt: "Gallery image 6" },
-    { id: 4, src: "/paintball-5.jpg", alt: "Gallery image 7" },
-    { id: 4, src: "/paintball-6.jpg", alt: "Gallery image 7" },
+    { id: 4, src: "/dyepaintball.jpg", alt: "Gallery image 2" },
+    { id: 5, src: "/paintball-2.jpg", alt: "Gallery image 4" },
+    { id: 6, src: "/paintball-3.jpg", alt: "Gallery image 5" },
+    { id: 7, src: "/paintball-4.jpg", alt: "Gallery image 6" },
+    { id: 8, src: "/paintball-5.jpg", alt: "Gallery image 7" },
+    { id: 9, src: "/paintball-6.jpg", alt: "Gallery image 7" },
   ];
 
   const handlePrevImage = () => {
